@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+main {
+  height: 90vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #000005;
+  overflow: auto;
+}
+
+/* INPUT AREA */
+
+.input-area {
+  display: flex;
+  height: 10vh;
+  gap: 8px;
+  padding: 10px;
+  background-color: #505050;
+}
+
+.input-area textarea {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  color: aliceblue;
+  border-radius: 4px;
+  padding: 10px 15px;
+  background-color: black;
+}
+
+.input-area button {
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  color: lightgreen;
+  background-color: #000005;
+}
+
+.input-area button:active {
+  background-color: lightgreen;
+  color: #000005;
+}
+
+/* MESSAGE */
+
+.text {
+  background-color: aquamarine;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+
+.message {
+  width: 50%;
+  padding: 1rem;
+  background-color: rgb(75, 75, 75);
+  border-radius: 4px;
+}
+
+.message.self {
+  align-self: flex-end;
+  background-color: lightgreen;
+}
+
+.message .user {
+  background-color: rgb(0, 0, 0);
+  font-size: .8em;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.message .date {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: .8em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: bisque;
+  margin-block: 8px;
+}
